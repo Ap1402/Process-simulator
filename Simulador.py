@@ -7,6 +7,8 @@ import interfaz
 import time
 import random
 
+## Python Simulator Andres Pinto
+
 colaProcesos=[]
 memoriaRestante=0
 memoriaTotal=0
@@ -14,7 +16,7 @@ quantum=None
 mutex=QtCore.QMutex()
 currentOpt=0
 
-class Simulador(QtGui.QMainWindow,interfaz2.Ui_MainWindow):
+class Simulador(QtGui.QMainWindow,interfaz.Ui_MainWindow):
     global colaProcesos
     def __init__(self,parent=None):
         super(Simulador,self).__init__(parent)
@@ -134,21 +136,10 @@ class Simulador(QtGui.QMainWindow,interfaz2.Ui_MainWindow):
 
     def desactivar_procesofields(self):
         if(self.fieldMemoria.isEnabled()):
-            self.fieldMemoriaP.setDisabled(True)
-            self.fieldNombre.setDisabled(True)
-            self.fieldRafaga.setDisabled(True)
-            self.fieldPrioridad.setDisabled(True)
-            self.btnAgregar.setDisabled(True)
-            self.btnBorrar.setDisabled(True)
-            self.btnRandom.setDisabled(True)
+            self.frameInputDatos.setDisabled(True)
+
         else:
-            self.fieldMemoriaP.setDisabled(False)
-            self.fieldNombre.setDisabled(False)
-            self.fieldRafaga.setDisabled(False)
-            self.fieldPrioridad.setDisabled(False)
-            self.btnAgregar.setDisabled(False)
-            self.btnBorrar.setDisabled(False)
-            self.btnRandom.setDisabled(False)
+            self.frameInputDatos.setDisabled(False)
 
     def mostrarMensaje(self,text):
         Dialog = QtGui.QDialog()
