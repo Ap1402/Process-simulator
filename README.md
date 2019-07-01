@@ -2,4 +2,5 @@
 Proyecto para materia universitaria
 
 Interfaz: QtPy
+
 Lenguaje: Python con multithreading
