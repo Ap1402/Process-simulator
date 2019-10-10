@@ -1,6 +1,7 @@
-# Simulador de procesos multihilos 
-Proyecto para materia universitaria
+# Process simulator
+Program made for an university project.
 
-Interfaz: QtPy
+UI: QtPy
+Qthread class was used along with alerts so all the process bars can show up different percentages at the same time without freezing the program.
 
-Lenguaje: Python con multithreading
+Language: Python 3.6 with multithreading
